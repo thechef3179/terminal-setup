@@ -3,3 +3,4 @@ return {
     opts = {
         -- add any options here
     }
+}
