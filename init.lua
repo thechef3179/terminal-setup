@@ -7,18 +7,14 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 vim.opt.showmode = false
-vim.opt.spelllang = "en_gb"
+vim.opt.spelllang = "en_us"
 
 -- use nvim-tree instead
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
--- Use system clipboard
-vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
-
 -- require Lazy Vim
 require("config.lazy")
-
 
 -- Tab stuff
 vim.opt.tabstop = 4
@@ -57,31 +53,12 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 
 require('lualine').setup()
 
--- require move.nvim 
-require('move').setup({
-	line = {
-		enable = true, -- Enables line movement
-		indent = true  -- Toggles indentation
-	},
-	block = {
-		enable = true, -- Enables block movement
-		indent = true  -- Toggles indentation
-	},
-	word = {
-		enable = false, -- Enables word movement
-	},
-	char = {
-		enable = false -- Enables char movement
-	}
-})
-
--- use habamax theme
+-- setting the color scheme
 -- vim.cmd([[colorscheme habamax]])
 vim.cmd([[colorscheme wildcharm]])
 
 -- require files with keybindings 
 require("keybinds")
-require("telebinds")
 
 -- setting true color
 vim.opt.termguicolors = true
