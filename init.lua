@@ -60,5 +60,10 @@ vim.cmd([[colorscheme wildcharm]])
 -- require files with keybindings 
 require("keybinds")
 
+-- require file for lsp
+require("lsp")
+require('lspconfig').rust_analyzer.setup({})
+-- require('lspconfig').python_lsp_server.setup({})
+
 -- setting true color
 vim.opt.termguicolors = true
