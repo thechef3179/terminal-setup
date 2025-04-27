@@ -55,14 +55,18 @@ require('lualine').setup()
 
 -- setting the color scheme
 -- vim.cmd([[colorscheme habamax]])
-vim.cmd([[colorscheme wildcharm]])
+vim.cmd([[colorscheme retrobox]])
 
 -- require files with keybindings 
 require("keybinds")
 
 -- require file for lsp
 require("lsp")
-require('lspconfig').rust_analyzer.setup({})
+vim.lsp.enable('rust_analyzer')
+vim.lsp.enable('pyright')
+vim.lsp.enable('clangd')
+
+-- require('lspconfig').rust_analyzer.setup({})
 -- require('lspconfig').python_lsp_server.setup({})
 
 -- setting true color
