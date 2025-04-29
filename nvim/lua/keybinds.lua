@@ -39,5 +39,9 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
--- keybind for neotree
+-- keybind for quality of life
+-- toggle neotree
 vim.keymap.set('n', '<leader>t', '<Cmd>Neotree toggle<CR>')
+-- toggle markdown render
+vim.keymap.set('n', '<leader>md', require('render-markdown').toggle, { desc = 'Toggle markdown rendering' })
+
