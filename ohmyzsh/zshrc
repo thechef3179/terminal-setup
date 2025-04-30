@@ -115,3 +115,5 @@ alias la="ls -a"
 
 # export path
 # export PATH="{custom-paths}:$PATH"
+# for mason lsps
+# export PATH="~/.local/share/nvim/mason/bin:$PATH"
