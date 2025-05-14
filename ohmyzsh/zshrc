@@ -104,16 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# alias for nvim
-alias vim="nvim"
-alias vi="nvim"
-alias nvi="nvim"
-
-# alias for la and ll
-alias ll="ls -la"
-alias la="ls -a"
-
-# export path
-# export PATH="{custom-paths}:$PATH"
-# for mason lsps
-# export PATH="~/.local/share/nvim/mason/bin:$PATH"
+# use custom paths and alias by storing them in ~/.zsh/
+if [ -f ~/.zsh/.zsh-mypaths ]; then
+    source ~/.zsh/.zsh-mypaths
+fi
+if [ -f ~/.zsh/.zsh-myalias ]; then
+    source ~/.zsh/.zsh-myalias
+fi
