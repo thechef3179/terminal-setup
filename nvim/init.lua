@@ -66,6 +66,9 @@ vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('pyright')
 vim.lsp.enable('clangd')
 
+-- require file for dap
+require("dapconfig")
+
 -- require('lspconfig').rust_analyzer.setup({})
 -- require('lspconfig').python_lsp_server.setup({})
 
