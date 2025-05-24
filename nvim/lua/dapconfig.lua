@@ -63,4 +63,6 @@ dap.configurations.cpp = {
     args = {},
   },
 }
-
+dap.configurations.py = {
+    dappy.setup(".venv*/bin/python")
+}
