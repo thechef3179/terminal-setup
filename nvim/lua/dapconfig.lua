@@ -33,7 +33,12 @@ dap.configurations.c = {
     type = 'lldb',
     request = 'launch',
     program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+      local source_file = vim.fn.input('Name of source code: ', 'main.c')
+      local bin_file = string.sub(source_file, 0, -3)
+      local cwd_ = vim.fn.getcwd()
+      local compile_command = string.format("g++ %s/src/%s -o %s/target/%s", cwd_, source_file, cwd_, bin_file)
+      os.execute(compile_command)
+      return string.format("%s/target/%s", cwd_, bin_file)
     end,
     cwd = '${workspaceFolder}',
     stopOnEntry = false,
@@ -46,7 +51,12 @@ dap.configurations.cpp = {
     type = 'lldb',
     request = 'launch',
     program = function()
-      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+      local source_file = vim.fn.input('Name of source code: ', 'main.cpp')
+      local bin_file = string.sub(source_file, 0, -3)
+      local cwd_ = vim.fn.getcwd()
+      local compile_command = string.format("g++ %s/src/%s -o %s/target/%s", cwd_, source_file, cwd_, bin_file)
+      os.execute(compile_command)
+      return string.format("%s/target/%s", cwd_, bin_file)
     end,
     cwd = '${workspaceFolder}',
     stopOnEntry = false,
