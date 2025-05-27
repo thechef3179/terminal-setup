@@ -70,8 +70,7 @@ ZSH_THEME="custom-amuse"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-plugins=(virtualenv)
+plugins=(git zsh-completions zsh-autosuggestions zsh-syntax-highlighting virtualenv)
 
 source $ZSH/oh-my-zsh.sh
 
