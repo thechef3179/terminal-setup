@@ -11,6 +11,7 @@ return {
         },
             "nvim-neotest/nvim-nio",
             "leoluz/nvim-dap-go",
+            "mfussenegger/nvim-dap-python",
             "julianolf/nvim-dap-lldb",
     },
 }

@@ -65,6 +65,7 @@ require("lsp")
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('pyright')
 vim.lsp.enable('clangd')
+vim.lsp.enable('gopls')
 
 -- require file for dap
 require("dapconfig")
