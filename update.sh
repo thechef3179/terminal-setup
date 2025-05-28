@@ -4,7 +4,7 @@
 cp ./ohmyzsh/zshrc ~/.zshrc
 
 # install tpm
-# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # install plugins for .zsh-autosuggestions and .zsh-completions
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
