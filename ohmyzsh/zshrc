@@ -110,3 +110,6 @@ fi
 if [ -f ~/.zsh/.zsh-myalias ]; then
     source ~/.zsh/.zsh-myalias
 fi
+if [ -f ~/.zsh/.zsh-myothers ]; then
+    source ~/.zsh/.zsh-myothers
+fi
