@@ -24,7 +24,7 @@ vim.keymap.set('n', '<Leader>w', function() dapui.toggle() end)
 -- setup for c
 dap.adapters.lldb = {
     type = 'executable',
-    command = '/home/thechef/.local/share/nvim/mason/bin/codelldb',
+    command = '~/.local/share/nvim/mason/bin/codelldb',
     name = 'lldb'
 }
 dap.configurations.c = {
