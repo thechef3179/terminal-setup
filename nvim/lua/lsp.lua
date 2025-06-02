@@ -38,11 +38,11 @@ cmp.setup({
     sources = {
         {name = 'nvim_lsp'},
     },
-    completion = {
-        -- by default autocomplete box will not show
-        -- it will need to be turned on
-        autocomplete = false,
-    },
+    -- completion = {
+    --     -- by default autocomplete box will not show
+    --     -- it will need to be turned on
+    --     autocomplete = false,
+    -- },
     snippet = {
         expand = function(args)
             -- You need Neovim v0.10 to use vim.snippet
