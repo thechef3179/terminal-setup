@@ -1,0 +1,4 @@
+hot
+librewolf
+mactex-no-gui
+wezterm

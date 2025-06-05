@@ -1,0 +1,16 @@
+fastfetch: Like neofetch, but much faster because written mostly in C
+fd: Simple, fast and user-friendly alternative to find
+go: Open source programming language to build simple/reliable/efficient software
+luarocks: Package manager for the Lua programming language
+neovim: Ambitious Vim-fork focused on extensibility and agility
+node: Platform built on V8 to build network applications
+pandoc: Swiss-army knife of markup format conversion
+python@3.13: Interpreted, interactive, object-oriented programming language
+python@3.9: Interpreted, interactive, object-oriented programming language
+ripgrep: Search tool like grep and The Silver Searcher
+tmux: Terminal multiplexer
+unison: File synchronization tool
+hot: (Hot) Menu bar application that displays the CPU speed limit due to thermal issues
+librewolf: (LibreWolf) Web browser
+mactex-no-gui: (MacTeX) Full TeX Live distribution without GUI applications
+wezterm: (WezTerm) GPU-accelerated cross-platform terminal emulator and multiplexer
