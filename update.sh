@@ -1,8 +1,16 @@
 #! /bin/zsh
 
+# install oh-my-zsh if not installed
+if [ ! -d ~/.oh-my-zsh ]; then
+    echo "install oh my zsh"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 # update zshrc
 echo "copying .zshrc file"
 cp ./ohmyzsh/zshrc ~/.zshrc
+echo "copying custom prompt theme"
+cp ./ohmyzsh/custom-amuse.zsh-theme ~/.oh-my-zsh/custom/themes/
 
 # install tpm
 if [ ! -d ~/.tmux/plugins/tpm ]; then
@@ -51,4 +59,6 @@ cp ./nvim/lua/plugins/* ~/.config/nvim/lua/plugins/
 # update tmux
 echo "copying tmux config file"
 cp ./tmux/tmux.conf ~/.tmux.conf
+
+source ~/.zshrc
 
