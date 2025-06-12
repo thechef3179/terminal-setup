@@ -19,7 +19,7 @@ for new_pane in $all_panes; do
         tmux new-window -t $session:$(( window_count+1 )) -n $window -c $directory
         window_count=$(( window_count+1 ))
     else 
-        tmux new-window -t $session:$(( window_count+1 )) -n $window -c $directory
+        tmux new-window -t $session:$(( window_count+1 )) -n $window -c ${directory//\"/}
         window_count=$(( window_count+1 ))
         # tmux new-window -t $session: -n $window -c $directory
     fi
