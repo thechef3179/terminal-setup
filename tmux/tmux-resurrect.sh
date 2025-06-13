@@ -11,7 +11,6 @@ for new_pane in $all_panes; do
     directory=${pane_info[2]}
     if [ ! "$current_session" = "$session" ]; then
         current_session="$session"
-        echo "session name: $current_session"
         window_count=0
         # check if session exists
         tmux has-session -t $session 2>/dev/null
