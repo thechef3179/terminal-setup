@@ -27,6 +27,16 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.gdefault = true
 
+-- Keep persistent undo
+vim.opt.undofile = true
+vim.opt.undolevels = 10000 
+-- Automatically create the undo directory if it doesn't exist
+local undo_dir = vim.fn.expand("~/.local/share/nvim/undo")
+if not vim.fn.isdirectory(undo_dir) then
+    vim.fn.mkdir(undo_dir, "p", true)
+end
+vim.opt.undodir = vim.fn.expand("~/.local/share/nvim/undo")
+
 -- scroll a bit extra horizontally and vertically when at the end/bottom
 vim.opt.sidescrolloff = 6
 vim.opt.scrolloff = 6
