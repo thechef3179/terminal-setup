@@ -12,6 +12,10 @@ vim.keymap.set("i", "<C-h>", "<Left>", { noremap = true })
 vim.keymap.set("i", "<C-k>", "<Up>", { noremap = true })
 vim.keymap.set("i", "<C-j>", "<Down>", { noremap = true })
 
+-- Use shortcut to move up and down neotree (next-prev buffer)
+-- Normal mode mappings for next and previous buffer
+vim.keymap.set('n', '<C-n>', '<cmd>bnext<CR>', { desc = 'Next Buffer' })
+vim.keymap.set('n', '<C-p>', '<cmd>bprevious<CR>', { desc = 'Previous Buffer' })
 
 -- for easier split navigation
 -- Keymaps for navigating windows
