@@ -7,4 +7,4 @@
 
 vim.opt.linebreak = true
 vim.opt.tw = 80
-
+vim.opt.spell = true
